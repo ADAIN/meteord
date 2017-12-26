@@ -12,7 +12,7 @@ function clean() {
 cd /tmp
 clean
 
-meteor create localmount
+meteor create --release 1.6 localmount
 cd localmount
 meteor build --architecture=os.linux.x86_64 ./
 pwd
@@ -23,7 +23,7 @@ docker run -d \
     -e ROOT_URL=http://localmount_app \
     -v /tmp/localmount:/bundle \
     -p 9090:80 \
-    "abernix/meteord:node-${NODE_VERSION}-base"
+    "adain/meteord:node-${NODE_VERSION}-base"
 
 sleep 50
 
