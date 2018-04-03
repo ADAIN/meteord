@@ -1,4 +1,6 @@
 #!/bin/bash
+read -p "Enter Your node.js Version: " NODE_VERSION
+
 set -x
 
 : ${NODE_VERSION?"NODE_VERSION has not been set."}
