@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 ## Borrowed from: https://github.com/chriswessels/meteor-tupperware
 
 set -e

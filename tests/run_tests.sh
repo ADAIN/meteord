@@ -1,8 +1,11 @@
 #!/bin/bash
+
+read -p "Enter Your node.js Version: " NODE_VERSION
+
 set -e
 set -x
 
-export NODE_VERSION=${NODE_VERSION:-8.11.1}
+export NODE_VERSION=${NODE_VERSION:-8.14.1}
 
 bash ./build_it.sh
 
